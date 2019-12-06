@@ -75,7 +75,7 @@ def list_append(linked_list, parent_data, child_data):
 
 if __name__ == '__main__':
     # Start with the empty list
-    with open('day_5.txt', 'r') as f:
+    with open('day_6.txt', 'r') as f:
         content = f.readlines()
     # print(content)
     result = []
