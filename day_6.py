@@ -43,10 +43,10 @@ if __name__ == '__main__':
     parent_of_san = orbiters_parent_map.get("SAN")
     parents_of_you = find_all_parents(parent_of_you, orbiters_parent_map)
     parents_of_san = find_all_parents(parent_of_san, orbiters_parent_map)
-    common_parents = []
+    rr = []
     for i in parents_of_you:
         if i in parents_of_san:
             current_index = parents_of_you.index(i)
             santa_index = parents_of_san.index(i)
-            common_parents.append(current_index + santa_index)
-    print("PART-2 ->", str(min(common_parents) + 2))
+            rr.append(current_index + santa_index)
+    print("PART-2 ->", str(min(rr) + 2))
